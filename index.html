@@ -25,6 +25,15 @@
     form input,form textarea {width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ddd;font-size:14px;}
     footer {text-align:center;padding:20px;background:#111;color:white;}
     @media(max-width:600px){header h1{font-size:24px;}}
+	/* Correction pour mobile - champs de formulaire responsives */
+	form input,
+	form textarea,
+	form select,
+	form button {
+		width: 100%;          /* toujours prendre toute la largeur disponible */
+		max-width: 100%;      /* empêcher de dépasser le conteneur */
+		box-sizing: border-box; /* inclure padding et border dans la largeur */
+	}
   </style>
 </head>
 <body>
